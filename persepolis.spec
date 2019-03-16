@@ -6,6 +6,8 @@ Group:          Networking/File transfer
 License:        GPLv3+
 URL:            https://persepolisdm.github.io/
 Source0:        https://github.com/persepolisdm/%{name}/archive/%{version}/%{name}-%{version}.tar.gz
+# Disable checking for runtime dependencies in setup.py.
+Patch0:         persepolis-nodepscheck.diff
 
 BuildArch:      noarch
 BuildRequires:  pkgconfig(python)
