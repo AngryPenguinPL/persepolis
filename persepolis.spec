@@ -39,7 +39,7 @@ Persepolis is a download manager and a GUI for aria2 powered by Python.
  - Download queue
  
 %prep
-%setup -q
+%autosetup -p1
 
 %build
 %{py_build}
